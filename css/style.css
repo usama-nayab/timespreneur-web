@@ -1,0 +1,1533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* scroll-snap-type: y mandatory; */
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden !important;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar.scrolled {
+    background: black;
+    color: white;
+}
+
+.navbar.scrolled .navvv-logo #logo-text {
+    filter: invert(0.90);
+}
+
+.navbar.scrolled .navbar-toggler i{color: #fff !important;}
+
+.navbar.scrolled .nav-link,
+.navbar.navbar.scrolled .dropbtn {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* scrolling effect begins */
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7,
+#section8,
+#section9,
+#section10,
+#section11,
+#section12,
+#section13
+ {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    scroll-snap-align: start;
+}
+
+#section8 {
+    align-items: end;
+    margin: 0;
+    padding: 0;
+}
+
+.cardss {
+    display: flex;
+    align-items: center;
+}
+
+/* scrolling effect ends */
+
+/* sidebar begins */
+.offcanvas {
+    background-color: #2b2b2b;
+}
+
+.offcanvas-header img {
+    width: 65% !important;
+    padding: 0.8em 0;
+}
+
+.offcanvas-body .nav-link {
+    color: #fff !important;
+    margin: 1em 0;
+}
+
+/* sidebar ends */
+/* nav begins */
+.navbar-nav {
+    /* padding-left: 11em !important; */
+    width: 100%;
+    justify-content: center;
+}
+
+.offcanvas-body .navbar-nav {
+    padding: 0 !important;
+}
+
+.navbar {
+    background-color: #120c0139;
+    height: 90px;
+    z-index: 99;
+}
+
+.nav-item {
+    margin: 0 0.7em !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-size: 1em;
+}
+
+.nav-item:hover .nav-kink {
+    border-bottom: 2px solid white;
+}
+
+.navvv-logo {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.navvv-logo img {
+    width: 60px;
+}
+
+.navvv-logo #logo-text {
+    width: 298px;
+    margin-left: 10px;
+}
+
+.navvv-logo h2 {
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.dropbtn {
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background: none !important;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0) ;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: rgb(203, 203, 203);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    border-radius: 3px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #eae6e6;
+    border-radius: 3px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 3px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    border-radius: 3px;
+}
+
+.nav-align {
+    margin: 0 5px !important;
+    list-style-type: none;
+}
+
+.nav-align i {
+    font-size: 0.8rem !important;
+    /* border-radius: 50%; */
+    padding-top: 5px;
+    padding-left: 5.5px;
+    width: 25px;
+    height: 25px;
+    /* border: 1.5px solid black; */
+    transition: 0.3s ease-in-out;
+}
+
+.nav-align i:hover {
+    /* background-color: #cfcfcf; */
+    /* border: 1.5px solid rgb(189, 191, 189); */
+    transition: 0.2s ease-in-out;
+    color: #a6a6a6;
+}
+
+.navbar-icons {
+    display: flex;
+    margin-left: 5em;
+}
+
+.cus {
+    justify-content: end;
+    align-items: center;
+}
+
+/* nav ends */
+
+/* hero begins */
+.hero {
+    background-image: linear-gradient(to bottom, rgba(10, 8, 5, 0.217), rgba(0, 0, 0, 0.335)),
+        url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.hero .container,
+.hero .container .row,
+.hero .container .row .hero-content {
+    height: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: #ffff;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.hero-content h1 {
+    font-size: 69px;
+    font-weight: 600;
+    margin-top: 1em;
+    font-size: 60px;
+    line-height: 70px;
+    position: relative;
+}
+
+.hero-content h1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -30px;
+    width: 20px;
+    height: 100%;
+    background-color: #5ea432;
+    border-radius: 30px;
+}
+
+.hero-content h4 {
+    font-size: 35px;
+    margin-bottom: 0.5em;
+
+}
+
+.hero-content p {
+    width: 60%;
+    text-align: center;
+}
+
+/* hero ends */
+
+
+/* hero cards begins */
+.hero-card {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.hero-card-img1,
+.hero-card-img2,
+.hero-card-img3 {
+    /* background-image:
+        linear-gradient(to bottom, rgba(79, 76, 72, 0.52), rgba(22, 10, 19, 0.31)),
+        url('../images/innovative.jpg'); */
+    /* background-size: cover; */
+    background-color: #3e8e41;
+    width: 100%;
+    height: 300px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-card-img1 h2,
+.hero-card-img2 h2,
+.hero-card-img3 h2 {
+    font-weight: 600;
+    z-index: 9;
+    position: absolute;
+    top: 45%;
+    letter-spacing: 10px;
+    transition: 0.6s ease-in-out;
+
+}
+.hero-card-img1::before,
+.hero-card-img2::before,
+.hero-card-img3::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgba(249, 161, 8, 0.557); */
+    background-image:
+        linear-gradient(to bottom, rgba(113, 165, 61, 0.677), rgba(22, 10, 19, 0.735)),
+        url('../images/innovative.jpg');
+    background-position: center;
+    border-radius: 7px;
+    top: 200%;
+    transition: 0.4s ease-in-out;
+}
+
+.hero-card-img2::before {
+    background-image:
+        linear-gradient(to bottom, rgba(113, 165, 61, 0.677), rgba(22, 10, 19, 0.735)),
+        url('../images/design.jpg');
+    background-position: center;
+}
+
+.hero-card-img3::before {
+    background-image:
+        linear-gradient(to bottom, rgba(113, 165, 61, 0.677), rgba(22, 10, 19, 0.735)),
+        url('../images/build.jpg');
+    background-position: center;
+}
+
+.hero-card:hover .hero-card-img1::before,
+.hero-card:hover .hero-card-img2::before,
+.hero-card:hover .hero-card-img3::before {
+    top: 0;
+}
+
+.hero-card:hover .hero-card-img1 h2,
+.hero-card:hover .hero-card-img2 h2,
+.hero-card:hover .hero-card-img3 h2 {
+    top: 20%;
+}
+
+
+.hero-card-img1::after,
+.hero-card-img2::after,
+.hero-card-img3::after {
+    content: 'This stage involves coming up with new and creative ideas for a product or service. This could involve brainstorming sessions, market research, or other methods of generating innovative concepts.';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    padding: 0 0.5em;
+    font-size: 13px;
+}
+
+.hero-card-img2::after {
+    content: 'Once an innovative concept has been identified, the next step is to design the product or service. This involves creating detailed plans, drawings, or models of the product or service, taking into account factors such as functionality, usability, aesthetics, and cost.';
+}
+
+.hero-card-img3::after {
+    content: 'The final stage is to build the product or service based on the design. This could involve prototyping, testing, refining, and ultimately manufacturing the final product or delivering the final service to customers.';
+}
+
+.hero-card:hover .hero-card-img1::after,
+.hero-card:hover .hero-card-img2::after,
+.hero-card:hover .hero-card-img3::after {
+    top: 40%;
+    transition: 0.6s ease-in-out;
+}
+
+.idb{
+    text-align: center;
+    margin: 2em 0;
+}
+.idb p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 1.5em 1em;
+    width: 70%;
+    border-radius: 100px;
+    border: 2px solid #3e8e41;
+    margin-top: 1em;
+}
+
+/* hero cards ends */
+
+/* about us begins */
+.about {
+    margin: 3em 0;
+}
+
+.about-head {
+    text-align: center;
+}
+
+.about-head h1 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    position: relative;
+}
+
+.about-head h1::after {
+    content: '';
+    position: absolute;
+    left: 41%;
+    top: 54px;
+    display: inline-block;
+    width: 23%;
+    height: 3px;
+    background-color: #f69218;
+}
+
+.mission-content,
+.vision-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission-content-div,
+.vision-content-div {
+    padding: 5em 2em;
+    color: #fff;
+    background-color: #3e8e41;
+    height: 60vh;
+    width: 100%;
+    margin-left: 28px;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: rgba(149, 149, 149, 0.741) 0px 2px 22px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission-content-div h2 , .vision-content-div h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.mission-content-div p , .vision-content-div p {
+    font-size: 12px;
+}
+
+.vision-content-div {
+    margin-left: -50px; 
+}
+
+#section3 .row,
+#section4 .row {
+    padding-top: 4em;
+}
+
+.logo-desc p {
+    margin: 0.6em 0;
+}
+
+.mission-image img,
+.vision-image img{
+    width: 100%;
+    height: 67vh;
+    position: relative;
+    right: 35px;
+    z-index: -1;
+}
+.vision-image img{
+    left: 30px;
+}
+
+.mission-content h2,
+.vision-content h2,
+.logo-desc h3,
+.logo-head,
+.trans-energy h4 {
+    font-size: 40px !important;
+    position: relative;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+.mission-content h2::after,
+.vision-content h2::after,
+.logo-desc h3::after,
+.logo-head::after,
+.trans-energy h4::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 39%;
+    height: 3px;
+    background-color: #76c047;
+}
+
+.logo-desc h3::after {
+    width: 23% !important;
+}
+
+.vision-content h2::after {
+    width: 32%;
+}
+
+.mission-img img,
+.vision-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.whyus h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.whyus p {
+    text-align: center;
+    width: 60%;
+}
+
+.whyus {
+    margin: 1.5em 0;
+    background-image:
+        linear-gradient(to bottom, rgba(5, 5, 5, 0.52), rgba(71, 35, 1, 0.247)),
+        url('../images/whyus.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* about us ends */
+
+/* green world begins */
+.green-world-capsol {
+    /* width: 70%; */
+    border-radius: 100px;
+    border: 2px solid #5ea432;
+    padding: 2.5em 1.5em;
+    text-align: center;
+    margin: 13px 0;
+}
+
+.green-world-capsol h1 {
+    font-size: 50px;
+    color: #3e8e41;
+}
+
+.green-world-points {
+    margin-left: 2em;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.green-world-points>p {
+    margin: 20px 0;
+    position: relative;
+}
+
+.green-world-points p::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    left: -17px;
+    border-radius: 50%;
+    background-color: #3e8e41;
+}
+
+/* green world ends */
+
+/* aligned with canada begins */
+.canada-img img {
+    width: 100%;
+    height: 50vh;
+}
+
+.canada-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #3e8e41;
+    height: 50vh;
+    padding-top: 5em;
+}
+
+.canada-content h3,
+.canada-content p {
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.canada-content p {
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+.diversity-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.diversity-content p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* aligned with canada ends */
+
+/* energy solution begins */
+.energy-imgs > img{
+    width: 25% !important;
+}
+.energy-content p{
+    font-size: 14px;
+}
+/* energy solution ends */
+
+/* green energy begins */
+.green-img img{
+    height: 100vh;
+    width: 100%;
+}
+.green-text{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2em;
+}
+/* green energy ends */
+
+/* canada 2050 begins */
+.canada2050-img img{
+    height: 100vh;
+    width: 100%;
+}
+.canada2050-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2em;
+}
+.canada2050-content h2{margin-top: 2em;}
+/* canada 2050 ends */
+
+/* logo begins */
+.logo-card {
+    /* width: 80vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 2em 0;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo-head {
+    font-size: 50px;
+    letter-spacing: 8px;
+    margin-top: 2em;
+}
+
+.logo-desc-img {
+    border-right: 1px solid rgba(0, 0, 0, 0.265);
+}
+
+.logo-desc-img img {
+    width: 70%;
+}
+
+.logo-desc h3::after {
+    width: 17%;
+}
+
+.logo-head::after {
+    left: 34%;
+    width: 31%;
+}
+
+/* logo ends */
+
+/* transition begins */
+.trans-energy {
+    text-align: center;
+}
+
+.trans-energy h4::after {
+    width: 48%;
+    left: 26%;
+}
+
+.trans-energy h4 {
+    margin: 1em 0;
+}
+
+.trans-energy p {
+    width: 70%;
+    margin: 1em auto;
+}
+
+/* transition ends */
+
+/* footer begins */
+footer {
+    color: #fff;
+    background-color: #3e8e41;
+
+}
+
+.foot-logo {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo #logo-text{
+    width: 30% !important;
+    margin-left: 10px;
+}
+
+.foot-logo .foot-img {
+    width: 6%;
+}
+
+.foot-items{
+    margin-top: 1em;
+}
+
+.foot-items a {
+    font-size: 1rem;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+}
+
+.foot-items a i {
+    font-size: 1.3rem;
+}
+
+
+.foot-content , .ventures {
+    margin: 2.1em 0;
+}
+
+.foot-content h6 , .ventures h6 , .diversity h6 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.diversity h6{margin-top: 30px !important;}
+.foot-content p , .diversity p{font-size: 14px; width: 90%;}
+/* .ventures h6{text-align: center;} */
+/* .ventures-tags{display: flex;} */
+.ventures-tags h4{
+    font-size: 18px;
+}
+.ventures-tags h5{
+    font-size: 17px;
+}
+.foot-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 1em;
+}
+
+.foot-end p {
+    margin: 0;
+}
+
+.foot-end .foot-end-icons i{
+    font-size: 1.1rem;
+    margin: 5px 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color:#fff;
+}
+.foot-end .foot-end-icons i:hover{
+    color: #adabab;
+}
+
+.foot-align {
+    margin-bottom: 2em;
+}
+
+/* footer ends */
+
+
+
+
+
+
+/* -----------------------------------SECOND PAGE BEGINS-------------------------------------------- */
+/* goals begins */
+.goal-rect{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient( rgba(32, 148, 0, 0.794) , rgb(1, 154, 47));
+    color: #fff;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+    margin-top: 2em ;
+    border-radius: 5px;
+}
+
+.goal-rect p{
+    width: 70%;
+}
+
+.goal-rect h1{
+    font-size: 45px;
+}
+.goal-rect .custom-btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #5af25f;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+}
+.goal-rect .custom-btn:hover{
+    background-color: #71ff0c89;
+
+    color: #fff;
+}
+.goal-cir-row{
+    background-color: #eceaea;
+    height: 64vh;
+    z-index: -1;
+    padding: 2em 0;
+}
+.goal-cir{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 2px solid #3e8e41;
+    padding: 2.5em 2em;
+    text-align: center;
+    font-size: 20px;
+}
+/* goals ends */
+
+/* ccs begins */
+.ccs-content h1{text-align: center; margin-top: 3em;}
+.ccs-imgs{background-color: #3e8e41; display: flex; justify-content: center;}
+.ccs-imgs img{
+    width: 22%;
+    height: 200px;
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+    margin: 0 -18px;
+}
+.ccs-content p{
+    margin: 1em 0;
+}
+.ccs-points p{
+    font-size: 15px;
+}
+/* ccs ends */
+
+/* net zero begins */
+.net-zero-content , .methane-content , .carbon-content{
+    background-color: #3e8e41;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5em;
+}
+.methane-content{padding-top: 4em;}
+.net-zero-content h1 , .methane-content h1 , .carbon-content h1{
+    font-size: 45px;
+}
+.net-zero-img img , .methane-img img , .carbon-img img{width: 100%; height: 100vh;}
+
+/* net zero ends */
+/* -----------------------------------SECOND PAGE ENDS-------------------------------------------- */
+
+
+/* --------------------------------RESPONSIVENESS BEGINS ------------------------------ */
+@media screen and (max-width:1100px) {
+    .navbar-nav {
+        padding-left: 2em !important;
+    }
+    .navbar-nav .dropbtn{font-size: 13px; font-weight: 600;}
+}
+
+@media screen and (max-width:990px) {
+    /* index page begins */
+
+    .navbar-nav{
+        padding: 0 !important;
+    }
+    .navbar-icons{justify-content: start; margin-left: 1em;}
+    .navbar {
+        height: max-content;
+        padding: 0.8em 0;
+    }
+
+    .cus form {
+        padding-left: 6em;
+    }
+
+    .cus form a {
+        color: #fff;
+    }
+
+    .hero-content {
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+        margin-top: 1.6em;
+    }
+
+    .hero-content p {
+        width: 75%;
+    }
+
+    .hero-card-img1 h2,
+    .hero-card-img2 h2,
+    .hero-card-img3 h2 {
+        font-size: 20px;
+        top: 47%;
+        letter-spacing: 6px;
+    }
+
+    .hero-card-img1::after,
+    .hero-card-img2::after,
+    .hero-card-img3::after {
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: -3px;
+    }
+
+    .hero-card-img1,
+    .hero-card-img2,
+    .hero-card-img3 {
+        height: 270px;
+    }
+    .hero-card-img1::after, .hero-card-img2::after, .hero-card-img3::after{
+        margin-top: -1px;
+    }
+    .idb p{width: 100%;}
+    .mission-content h2,
+    .vision-content h2,
+    .logo-desc h3,
+    .logo-head,
+    .trans-energy h4 {
+        margin-bottom: 0;
+        font-size: 35px !important;
+    }
+
+    .mission-content-div h4{
+        font-size: 18px;
+    }
+
+    .mission-content-div, .vision-content-div{padding: 5em 1em;}
+    .mission-content-div p, .vision-content-div p{font-size: 11px;}
+
+    .ccs-imgs img{
+        width: 24%;
+        height: 154px;
+    }
+    .mission-content h2::after,
+    .vision-content h2::after,
+    .logo-desc h3::after,
+    .logo-head::after,
+    .trans-energy h4::after {
+        top: 41px;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .logo-desc p {
+        font-size: 14px;
+    }
+
+    .mission-content h2::after {
+        width: 57%;
+    }
+
+    .vision-content h2::after {
+        width: 47% !important;
+    }
+
+    .whyus {
+        height: 60vh;
+    }
+
+    .whyus p {
+        font-size: 14px;
+        width: 55%;
+    }
+
+    .logo-head {
+        margin-top: 2em;
+    }
+
+    .logo-head::after {
+        left: 27%;
+        width: 45%;
+    }
+
+    .logo-desc h3::after {
+        width: 38% !important;
+    }
+
+    .ven-name {
+        margin: 1em;
+    }
+
+    .trans-energy h4 {
+        margin: 0;
+    }
+
+    .trans-energy h4::after {
+        width: 69%;
+        left: 15%;
+    }
+
+    .green-text p , .canada2050-content p{font-size: 14px;}
+    .green-world-points>p{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .green-world-capsol h1{font-size: 42px;}
+    .green-world-capsol{padding: 1.5em;}
+    .foot-content p{font-size: 13px;}
+    .ventures-tags h4{font-size: 17px;}
+
+    /* index page ends */
+
+    /* first page begins */
+    .mission-content-div h2, .vision-content-div h2{font-size: 28px;}
+    /* first page ends */
+
+    /* secound page begins */
+    .goal-rect-content {margin: 0 1em; width: 70%;}
+    .goal-rect .custom-btn{
+        margin: 0 1em;
+        padding: 0.5em 10px;
+        font-size: 14px;
+    }
+    .goal-cir{padding: 2em 2em;}
+    .goal-cir p{margin: 0;}
+    /* secound page ends */
+}
+
+@media screen and (max-width:768px) {
+
+    #section10 , #section5 , #section2 , #section3 ,#section4 , #section13 {height: auto; margin: 20px 0;}
+    #section11 , #section6 , #section8 , #section12 {height: auto;}
+
+    #section13{margin-top: 3em;}
+
+    /* index page begins */
+    .hero-card {
+        margin: 0.7em 0;
+    }
+
+    .hero-content h1 {
+        font-size: 37px;
+        line-height: 1.5;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        width: 63%;
+    }
+
+    .idb p{width: 100%; font-size: 16px;}
+    .res-card{
+        justify-content: center;
+    }
+
+    .hero-card-img1::after, .hero-card-img2::after, .hero-card-img3::after{
+        margin-top: 25px;
+    }
+    
+    
+
+    .hero-card-img1 h2,
+    .hero-card-img2 h2,
+    .hero-card-img3 h2 {
+        font-size: 26px;
+    }
+
+    .mission-content-div{
+        margin-left: 0;
+        margin: 1em 0;
+        height: auto;
+        z-index: -1;
+    }
+
+    .mission-image img{
+        right: 0;
+        top: -40px;
+        z-index: 1;
+        height: 60vh;
+    }
+
+    .ccs-imgs img {
+        width: 28%;
+        height: 140px;
+    }
+
+    .ccs-points p{font-size: 14px;}
+    
+    .green-text{height: auto; }
+    .green-text h1{margin:20px auto!important;}
+    .green-img img , .canada2050-img img{
+        height: 70vh;
+        width: 90%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .canada2050 .row{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .mission-content,
+    .vision-content {
+        margin-top: 4.3em;
+        text-align: center;
+    }
+
+    .mission-img,
+    .vision-img {
+        text-align: center;
+    }
+
+    .mission-img img,
+    .vision-img img {
+        width: 66%;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .logo-desc p {
+        width: 70%;
+        margin: 5px auto;
+        font-size: 13px;
+    }
+
+    .vission {
+        flex-direction: column-reverse;
+    }
+
+    .mission-content h2::after,
+    .vision-content h2::after,
+    .logo-desc h3::after,
+    .logo-head::after,
+    .trans-energy h4::after {
+        left: 31%;
+        width: 37%;
+    }
+
+    .vision-content h2::after {
+        left: 35% !important;
+        width: 30% !important;
+    }
+
+    .logo-card {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .logo-desc-img {
+        border: none;
+        text-align: center;
+    }
+
+    .logo-desc-img img {
+        width: 30%;
+    }
+
+    .logo-desc {
+        text-align: center;
+    }
+
+    .logo-head {
+        margin-top: 2.8em;
+        font-size: 30px;
+    }
+
+    .logo-desc p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .logo-head::after {
+        left: 19%;
+        width: 60% !important;
+    }
+
+    .logo-desc h3::after {
+        left: 36% !important;
+        width: 27% !important;
+    }
+
+    .ven-name h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .ven-name {
+        height: 65px;
+        margin: 6px auto;
+        width: 60vw;
+    }
+
+    .trans-energy h4 {
+        font-size: 30px !important;
+    }
+
+    .trans-energy p {
+        font-size: 13px;
+    }
+
+    .trans-energy h4::after {
+        left: 16%;
+        width: 77%;
+    }
+
+    .trans-energy h4::after {
+        display: none;
+    }
+    .green-world-capsol{width: 100%;}
+    .green-world-capsol h1{
+        font-size: 35px;
+    }
+    .foot-content h6, .ventures h6 , .diversity h6{
+        font-size: 21px;
+    }
+    .diversity{text-align: center;}
+    .diversity p{
+        width: 100%;
+        font-size: 12px;
+    }
+    .foot-content p{
+        font-size: 12px;
+    }
+    .ventures-tags h4 , .ventures-tags h5{
+        font-size: 15px;
+    }
+    /* index page ends */
+
+    /* first page begins */
+    .mission-content-div{z-index: +2;}
+    .mission-image img{top: -23px;}
+    .vision-image img{left: 0;}
+    .vision-content-div{margin: 0; top: -12px;}
+    /* first page ends */
+
+    /* secound page begins */
+    .goal-rect-content{width: 60%;}
+    .goal-rect h1{font-size: 35px;}
+    .goal-rect p{font-size: 15px;}
+    .goal-rect .custom-btn{font-size: 13px; font-weight: 600;}
+    .goal-cir p{font-size: 17px;}
+    .ccs-content p{font-size: 14px;}
+    .methane_row{flex-direction: column-reverse;}
+    .net-zero-content p , .methane-content p , .carbon-content p{font-size: 15px; width: 90%;}
+    .net-zero-content h1, .methane-content h1, .carbon-content h1{font-size: 35px;}
+    /* secound page ends */
+
+
+}
+
+@media screen and (max-width:576px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+    .navvv-logo #logo-text {
+        width: 250px;
+        margin-left: 5px;
+    }
+    .navvv-logo img {
+        width: 50px;
+    }
+    .idb p{font-size: 15px;}
+    .mission-content-div , .ccs-points , .green-text , .canada2050-content , .foot-content ,.ventures{text-align: center;}
+    .foot-content p{margin: auto;}
+    .green-world-capsol h1{font-size: 25px;}
+    .green-world-points p::before{top: 6px;}
+    .hero-content h1{left: 40px;}
+    .ccs-imgs{flex-direction: column; align-items: center; background-color: transparent;}
+    .ccs-imgs img{
+        margin: 10px 0;
+        width: 60%;
+        clip-path: none;
+        border-radius: 10px;
+    }
+    /* secound page begins */
+    .goal-rect h1 , .ccs-content h1{font-size: 28px;}
+    .goal-rect p{font-size: 12px; width: 100%;}
+    .goal-rect{flex-direction: column;}
+    .goal-rect-content{width: 100%; text-align: center;}
+    .goal-rect .custom-btn{font-size: 11px;}
+    .goal-cir{width: 85%;}
+    .goal-cir p{font-size: 15px;}
+    .ccs-content p{text-align: center; font-size: 13px;}
+    .net-zero-content h1, .methane-content h1, .carbon-content h1{font-size: 28px;}
+    .net-zero-content p, .methane-content p, .carbon-content p{font-size: 13px;}
+    /* secound page ends */
+}
+
+@media screen and (max-width:415px) {
+    
+    .navvv-logo #logo-text {
+        width: 192px;
+        margin-left: 1px;
+    }
+    .navvv-logo img {
+        width: 45px;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .hero-content p {
+        width: 90%;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .logo-desc p {
+        width: 90%;
+    }
+
+    .mission-img img,
+    .vision-img img {
+        width: 90%;
+    }
+
+    .whyus h2 {
+        font-size: 35px;
+    }
+
+    .whyus p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .logo-head {
+        font-size: 25px !important;
+    }
+
+    .logo-desc p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .logo-head::after {
+        left: 23%;
+        width: 63%;
+        top: 30px;
+    }
+
+    .logo-desc h3::after {
+        left: 29%;
+        width: 29%;
+    }
+
+    .trans-energy h4 {
+        font-size: 20px !important;
+        letter-spacing: 3px;
+    }
+
+    .ven-name {
+        width: 83vw !important;
+    }
+
+    .trans-energy h4::after {
+        top: 30px;
+        width: 71% !important;
+    }
+    .foot-end p{font-size: 13px;}
+
+    /* secound page begins */
+    .goal-cir{width: 100%;}
+    .goal-cir p{font-size: 14px;}
+    .goal-rect h1, .ccs-content h1{font-size: 18px;}
+    .goal-rect p{padding: 0 10px;}
+    .ccs-content p{font-size: 12px;}
+    .net-zero-content , .methane-content , .carbon-content{text-align: center;}
+    .net-zero-content p, .methane-content p, .carbon-content p{width: 100%; font-size: 12px;}
+    .logo-head::after , .logo-desc h3::after{display: none;}
+    .logo-head , .logo-desc h3{text-decoration: underline; text-decoration-color: #3e8e41; font-size: 24px !important; font-weight: 500; }
+    /* secound page ends */
+}
+
+@media screen and (max-width:375px) {
+    
+    .hero-content h1 {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .idb p , .ccs-points p , .green-text p, .canada2050-content p ,.green-world-points>p {font-size: 12px;}
+    .green-world-capsol h1{font-size: 20px;}
+    .green-world-points p::before{width: 8px; height: 8px; top: 5px;}
+    .foot-end .foot-end-icons i{
+        font-size: 18px;
+    }
+
+    .mission-content p,
+    .vision-content p,
+    .logo-desc p {
+        font-size: 11px;
+    }
+
+    .whyus h2 {
+        font-size: 26px;
+    }
+
+    .whyus p {
+        font-size: 11px;
+    }
+
+    .trans-energy p {
+        font-size: 12px;
+    }
+
+    /* secound page begins */
+    .goal-cir p{font-size: 12px;}
+    /* secound page ends */
+}
+
+@media screen and (max-width:320px) {
+    #section3{margin-top: 3em;}
+    .navbar .container-fluid {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        margin-top: 7em;
+        letter-spacing: 3px;
+        font-size: 22px;
+    }
+
+    .navbar-nav {
+        padding: 0;
+    }
+    .trans-energy h4::after {
+        display: none;
+    }
+    .goal-cir p{font-size: 10px;}
+    .net-zero-content p, .methane-content p, .carbon-content p{font-size: 10px;}
+}
+
+/* --------------------------------RESPONSIVENESS ENDS ------------------------------ */
